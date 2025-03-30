@@ -8,7 +8,26 @@
         body { font-family: Arial, sans-serif; direction: rtl; text-align: right; margin: 20px; }
         header { background: #007bff; color: white; padding: 15px; text-align: center; }
         section { margin: 20px 0; }
-        .contact-form { background: #f8f9fa; padding: 15px; border-radius: 5px; }
+        .contact-form { background: #f8f9fa; padding: 15px; border-radius: 5px; padding-bottom: 20px; }
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25d366;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+        }
+        .whatsapp-button img {
+            width: 24px;
+            height: 24px;
+            margin-left: 8px;
+        }
     </style>
 </head>
 <body>
@@ -36,6 +55,12 @@
             <textarea id="message" name="message" required></textarea><br><br>
             <button type="submit">إرسال</button>
         </form>
+
+        <!-- زر التواصل عبر واتساب -->
+        <a class="whatsapp-button" href="https://wa.me/201275375751" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">
+            تواصل عبر واتساب
+        </a>
     </section>
 </body>
 </html>
