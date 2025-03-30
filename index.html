@@ -9,21 +9,25 @@
         header { background: #007bff; color: white; padding: 15px; text-align: center; }
         section { margin: 20px 0; }
         .contact-form { background: #f8f9fa; padding: 15px; border-radius: 5px; padding-bottom: 20px; }
-        .whatsapp-button {
-            display: inline-block;
-            background-color: #25d366;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
-            margin-top: 10px;
+        .contact-buttons {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+        }
+        .contact-button {
             display: flex;
             align-items: center;
             justify-content: center;
+            padding: 10px 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
             width: fit-content;
         }
-        .whatsapp-button img {
+        .whatsapp-button { background-color: #25d366; }
+        .facebook-button { background-color: #1877f2; }
+        .contact-button img {
             width: 24px;
             height: 24px;
             margin-left: 8px;
@@ -36,14 +40,15 @@
     </header>
     <section>
         <h2>عن خدماتنا</h2>
-        <p>نحن نقدم خدمات صيانة وإصلاح متكاملة للأجهزة الرياضية بمهنية عالية وسرعة في التنفيذ.</p>
+        <p>لو عندك أي جهاز رياضي كهربائي عطلان، إحنا بنوفرلك صيانة وإصلاح بأعلى جودة وفي أسرع وقت.  
+        بنصلح **كل أنواع الأجهزة الرياضية الكهربائية** زي المشايات، العجل، الأوربتراك، وأي جهاز تاني محتاج صيانة.</p>
     </section>
     <section>
         <h2>خدماتنا</h2>
         <ul>
-            <li>صيانة الأجهزة الكهربائية والميكانيكية</li>
-            <li>استبدال القطع التالفة</li>
-            <li>فحص دوري وضمان الجودة</li>
+            <li>صيانة وإصلاح كل الأجهزة الرياضية الكهربائية</li>
+            <li>استبدال القطع التالفة بقطع غيار أصلية</li>
+            <li>فحص دوري وضمان الجودة بعد الصيانة</li>
         </ul>
     </section>
     <section class="contact-form">
@@ -56,11 +61,17 @@
             <button type="submit">إرسال</button>
         </form>
 
-        <!-- زر التواصل عبر واتساب -->
-        <a class="whatsapp-button" href="https://wa.me/201275375751" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">
-            تواصل عبر واتساب
-        </a>
+        <!-- أزرار التواصل عبر واتساب وفيسبوك -->
+        <div class="contact-buttons">
+            <a class="contact-button whatsapp-button" href="https://wa.me/201275375751" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="واتساب">
+                تواصل عبر واتساب
+            </a>
+            <a class="contact-button facebook-button" href="https://www.facebook.com/profile.php?id=100063860683742" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="فيسبوك">
+                تواصل عبر فيسبوك
+            </a>
+        </div>
     </section>
 </body>
 </html>
